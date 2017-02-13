@@ -13,7 +13,12 @@ module.exports = {
   rules: {
     'jsx-quotes': ['error', 'prefer-single'],
     // A .jsx extension is not required for files containing jsx.
-    'react/jsx-filename-extension': 0
+    'react/jsx-filename-extension': 0,
+    // allow _id underscore-dangle
+    'no-underscore-dangle': ['error', {
+      allowAfterThis: false,
+      allow: ['_id']
+    }]
   },
   settings: {
     'import/resolver': {
