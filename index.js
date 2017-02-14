@@ -18,7 +18,12 @@ module.exports = {
     'no-underscore-dangle': ['error', {
       allowAfterThis: false,
       allow: ['_id']
-    }]
+    }],
+    // enforcing stateless components also implies refactoring a
+    // component entirely if we want to switch it to a non functional one
+    // enforcing component structure consistency seems better at this point
+    // -> also no performance gains for now (actually the opposite)
+    'react/prefer-stateless-function': 0,
   },
   settings: {
     'import/resolver': {
