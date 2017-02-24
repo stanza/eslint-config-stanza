@@ -24,6 +24,22 @@ module.exports = {
     // enforcing component structure consistency seems better at this point
     // -> also no performance gains for now (actually the opposite)
     'react/prefer-stateless-function': 0,
+    // React sub renders should go below the main render
+    // why? you read code from top to bottom
+    'react/sort-comp': ['error', {
+      'order': [
+        'static-methods',
+        'lifecycle',
+        '/^on.+$/',
+        '/^(get|set)(?!(InitialState$|DefaultProps$|ChildContext$)).+$/',
+        'everything-else',
+        'render',
+        '/^render.+$/'
+      ],
+    }],
+    // this was colliding with the sub render functions
+    // can be set back when it supports regex entries in exceptMethods
+    'class-methods-use-this': 0,
   },
   settings: {
     'import/resolver': {
