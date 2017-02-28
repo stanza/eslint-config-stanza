@@ -40,6 +40,12 @@ module.exports = {
     // this was colliding with the sub render functions
     // can be set back when it supports regex entries in exceptMethods
     'class-methods-use-this': 0,
+    // removed object prop type from forbidden since it leads to duplicate
+    // object structure types declaration which can be hard to maintain in
+    // the long term
+    'react/forbid-prop-types': ['error', {
+      forbid: ['any', 'array']
+    }],
   },
   settings: {
     'import/resolver': {
