@@ -46,6 +46,8 @@ module.exports = {
     'react/forbid-prop-types': ['error', {
       forbid: ['any', 'array']
     }],
+    // Sometimes mouse events are needed in other than buttons or links
+    'jsx-a11y/no-static-element-interactions': 0,
   },
   settings: {
     'import/resolver': {
