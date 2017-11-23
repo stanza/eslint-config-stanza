@@ -48,6 +48,16 @@ module.exports = {
     }],
     // Sometimes mouse events are needed in other than buttons or links
     'jsx-a11y/no-static-element-interactions': 0,
+
+    // in multiple cases you might want to break a single
+    // parameter into a new line
+    'function-paren-newline': 0,
+
+    // this broke some use cases where you want the semicolon in a new line
+    'semi-style': 0,
+
+    // this is broken for template string
+    'indent': 0
   },
   settings: {
     'import/resolver': {
