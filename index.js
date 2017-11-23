@@ -57,7 +57,23 @@ module.exports = {
     'semi-style': 0,
 
     // this is broken for template string
-    'indent': 0
+    'indent': 0,
+
+    // broken for re assignments, enable again after fix
+    // https://github.com/eslint/eslint/issues/7886
+    "prefer-destructuring": 0,
+
+    // React router Link does not need/support href
+    "jsx-a11y/anchor-is-valid": 0,
+
+    // ignore this
+    "jsx-a11y/click-events-have-key-events": 0,
+
+    // temporary until refactor to not use findDOMNode
+    "react/no-find-dom-node": 0,
+
+    // htmlFor is enough
+    "jsx-a11y/label-has-for": 0
   },
   settings: {
     'import/resolver': {
