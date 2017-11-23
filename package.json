@@ -8,7 +8,7 @@
   "license": "MIT",
   "dependencies": {
     "babel-eslint": "^8.0.2",
-    "eslint": "^4.11.0",
+    "eslint": "git+ssh://git@github.com:CompuIves/eslint.git#add/define-parser",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-config-airbnb-base": "12.1.0",
     "eslint-import-resolver-webpack": "^0.8.1",
