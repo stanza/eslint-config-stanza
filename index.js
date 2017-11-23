@@ -68,12 +68,21 @@ module.exports = {
 
     // ignore this
     "jsx-a11y/click-events-have-key-events": 0,
+    "jsx-a11y/mouse-events-have-key-events": 0,
 
     // temporary until refactor to not use findDOMNode
     "react/no-find-dom-node": 0,
 
     // htmlFor is enough
-    "jsx-a11y/label-has-for": 0
+    "jsx-a11y/label-has-for": 0,
+
+    // ignore
+    "jsx-a11y/no-autofocus": 0,
+
+    // ignore
+    "jsx-a11y/no-noninteractive-element-interactions": 0,
+    "react/no-will-update-set-state": 0,
+    "jsx-a11y/media-has-caption": 0
   },
   settings: {
     'import/resolver': {
